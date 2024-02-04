@@ -1,0 +1,9 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+SET TIME ZONE 'Europe/Moscow';
+CREATE TABLE IF NOT EXISTS books(
+    id uuid PRIMARY KEY NOT NULL DEFAULT uuid_generate_v4 (),
+    title VARCHAR NOT NULL,
+    author VARCHAR NOT NULL,
+    year INT NOT NULL DEFAULT 1900,
+    updated TIMESTAMP NOT NULL DEFAULT now()
+);

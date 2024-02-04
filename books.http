@@ -1,0 +1,29 @@
+### get all books
+GET localhost:3000/api/v1/books
+Accept: application/json
+### get book
+GET localhost:3000/api/v1/books/91a65318-b3c5-4f5d-a7cc-262f63b1fb2c
+Accept: application/json
+
+### create book
+POST localhost:3000/api/v1/books
+Content-Type: application/json
+
+{
+  "title": "Гарри Поттер и Дары Смерти",
+  "author": "Джоан Роулинг",
+  "year": 2007
+}
+
+### update book
+PUT localhost:3000/api/v1/books/dfa888be-a97b-40b2-be33-fd9a340c964c
+Content-Type: application/json
+
+{
+  "title": "Гарри Поттер и Тайная комната",
+  "author": "Джоан Роулинг",
+  "year": 1998
+}
+### delete book
+DELETE localhost:3000/api/v1/books/43964036-24b8-4468-b693-57874bbe1a7e
+Content-Type: application/json
