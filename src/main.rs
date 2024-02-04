@@ -6,10 +6,10 @@ use state::AppState;
 use tokio::net::TcpListener;
 mod error;
 pub mod repository;
-pub mod rest;
 pub mod router;
 pub mod state;
 pub mod models;
+pub mod rest;
 
 pub use error::Result;
 #[tokio::main]
